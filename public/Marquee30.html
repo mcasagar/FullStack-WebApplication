@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Marquee</title>
+        <style>
+            div{
+                margin-bottom: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <marquee> 1) Special Offers 50% off on all Mobiles </marquee>
+        </div>
+        
+        <div>
+            <marquee scrollamount="15"> Attribute - scrollamount : Scrolling Speed  </marquee>
+        </div>
+
+        <div>
+            <marquee direction="right"> Attribute - direction : left to right  </marquee>
+        </div>
+
+        <div>
+            <marquee behavior="alternate"> Attribute - behavior : left-right  </marquee>
+        </div>
+
+        <div>
+            <marquee loop="3"> Attribute - loop : scroll only given no of times  </marquee>
+        </div>
+
+        <div>
+            <marquee bgcolor="yellow" width="20%" height="100"> Attribute - bgcolor,width and height : for marquee container  </marquee>
+        </div>
+
+        <div>
+            <marquee scrollamount="10" onmouseover="this.stop()" onmouseout="this.start()"> 
+                <img src="assets/chappal.jpeg" width="100" height="100">
+                <img src="assets/earpods.jpg" width="100" height="100">
+                <img src="assets/laptop.jpg" width="100" height="100">
+                <img src="assets/mobile.jpg" width="100" height="100">
+                <img src="assets/monitor.jpg" width="100" height="100">
+                <img src="assets/shirt.jpg" width="100" height="100">
+            </marquee>
+        </div>
+        
+    </body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Design Cards using images</title>
+        <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+        <style>
+            #card{
+                width: 200px;
+                box-shadow: 3px 3px 3px purple;
+                padding: 20px;
+                margin: 20px;
+                border: 2px solid black;
+            }
+            #container{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            button{
+                width: 100%;
+                font-size: 20px;
+                background-color: tomato;
+                color: white;
+            }
+            #card-header{
+                background-color: tomato;
+                color: white;
+                font-size: 20px;
+                text-align: center;
+                padding: 14px;
+            }
+            #star{
+                color: orange;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="card">
+                <div id="card-header">
+                    <h3>JBL Speaker</h3>
+                </div>
+                <div id="card-body">
+                    <img src="assets/speaker.jpg" alt="JBL Speaker" width="100%" height="200">
+                    <p id="star">
+                        <span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-half"></span>
+                    </p>
+                    <p>&#8377; 5300.00</p>
+                </div>
+                <div id="card-footer">
+                    <button><span class="bi bi-cart4"></span> Add to cart</button>
+                </div>
+            </div>
+
+            <div id="card">
+                <div id="card-header">
+                    <h3>Nike Casuals</h3>
+                </div>
+                <div id="card-body">
+                    <img src="assets/shoes.jpg" alt="Nike Casuals" width="100%" height="200">
+                    <p>&#8377; 2000.00</p>
+                </div>
+                <div id="card-footer">
+                    <button><span class="bi bi-cart4"></span> Add to cart</button>
+                </div>
+            </div>
+
+            <div id="card">
+                <div id="card-header">
+                    <h3>Shirt</h3>
+                </div>
+                <div id="card-body">
+                    <img src="assets/shirt.jpg" alt="Addidas T-shirt" width="100%" height="200">
+                    <p>&#8377; 1250.00</p>
+                </div>
+                <div id="card-footer">
+                    <button><span class="bi bi-cart4"></span> Add to cart</button>
+                </div>
+            </div>
+
+            <div id="card">
+                <div id="card-header">
+                    <h3>Mi Airbuds</h3>
+                </div>
+                <div id="card-body">
+                    <img src="assets/earpods.jpg" alt="Mi Airbuds" width="100%" height="200">
+                    <p>&#8377; 999.99</p>
+                </div>
+                <div id="card-footer">
+                    <button><span class="bi bi-cart4"></span> Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Regular Expression</title>
+        <style>
+            fieldset{
+                margin-bottom: 25px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <fieldset>
+                <legend>Ex ? Meta Character</legend>
+                <form action="">
+                    Test: <input type="text" pattern="colou?r" placeholder="Enter color or colour" name="text">
+                    <button>Register</button>
+                </form>
+            </fieldset>
+
+            <fieldset>
+                <legend>Ex + Meta Character</legend>
+                <form action="">
+                    Test: <input type="text" pattern="colou+r" placeholder="Enter color or colour" name="text">
+                    <button>Register</button>
+                </form>
+            </fieldset>
+
+            <fieldset>
+                <legend>Ex * Meta Character</legend>
+                <form action="">
+                    Test: <input type="text" pattern="colou*r" placeholder="Enter color or colour" name="text">
+                    <button>Register</button>
+                </form>
+            </fieldset>
+
+            <fieldset>
+                <legend>Ex . Meta Character</legend>
+                <form action="">
+                    Test: <input type="text" pattern=".at"  name="text">
+                    <button>Register</button>
+                </form>
+            </fieldset>
+
+            <fieldset>
+                <legend>Ex | Meta Character</legend>
+                <form action="">
+                    Test: <input type="text" pattern="red|green|blue" placeholder="Enter RGB color Name" name="text">
+                    <button>Register</button>
+                </form>
+            </fieldset>
+
+            <fieldset>
+                <legend>Ex \d Meta Character</legend>
+                <form action="">
+                    Test: <input type="text" pattern="\d" placeholder="allow only numeric value (single digit only)" size="40" name="text">
+                    <button>Register</button>
+                </form>
+            </fieldset>
+
+            <fieldset>
+                <legend>Ex \d\d Meta Character</legend>
+                <form action="">
+                    Test: <input type="text" pattern="\d\d" placeholder="allow only numeric value (exactly 2 digit allowed only)" size="40" name="text">
+                    <button>Register</button>
+                </form>
+            </fieldset>
+
+            <fieldset>
+                <legend>Ex \D Meta Character</legend>
+                <form action="">
+                    Test: <input type="text" pattern="\D" placeholder="Only allowed non-numeric value" size="40" name="text">
+                    <button>Register</button>
+                </form>
+            </fieldset>
+
+            <fieldset>
+                <legend>Ex \w Meta Character</legend>
+                <form action="">
+                    Test: <input type="text" pattern="\w" placeholder="Only alpha-numeric with underscore allowed [a-z, A-Z, 0-9]" size="40" name="text">
+                    <button>Register</button>
+                </form>
+            </fieldset>
+
+            <fieldset>
+                <legend>Ex \W Meta Character</legend>
+                <form action="">
+                    Test: <input type="text" pattern="\W" placeholder="Only Special Character Allowed like [@,$,#]" size="40" name="text">
+                    <button>Register</button>
+                </form>
+            </fieldset>
+
+            <fieldset>
+                <legend>Ex \s Meta Character</legend>
+                <form action="">
+                    Test: <input type="text" pattern="\d\d\s\w" placeholder="\s indicates space or tab between char" size="40" name="text">
+                    <button>Register</button>
+                </form>
+            </fieldset>
+
+            <fieldset>
+                <legend>Ex [a-z]</legend>
+                <form action="">
+                    Test: <input type="text" pattern="[a-z]" placeholder="Allowed only lower case alphabates (only one char)" size="40" name="text">
+                    <button>Register</button>
+                </form>
+            </fieldset>
+
+            <fieldset>
+                <legend>Ex [A-Z]</legend>
+                <form action="">
+                    Test: <input type="text" pattern="[A-Z]" placeholder="Allowed only Upper case alphabates (only one char)" size="40" name="text">
+                    <button>Register</button>
+                </form>
+            </fieldset>
+
+            <fieldset>
+                <legend>Ex [a-zA-Z]</legend>
+                <form action="">
+                    Test: <input type="text" pattern="[a-zA-Z]" placeholder="Allowed both Lower & Uppercase alphabates (only one char)" size="40" name="text">
+                    <button>Register</button>
+                </form>
+            </fieldset>
+
+            <fieldset>
+                <legend>Ex [a-Z]</legend>
+                <form action="">
+                    Test: <input type="text" pattern="[a-Z]" placeholder="Allowed both Lower and Upper case alphabates" size="40" name="text">
+                    <button>Register</button>
+                </form>
+            </fieldset>
+
+            <fieldset>
+                <legend>Ex [a,d,s]</legend>
+                <form action="">
+                    Test: <input type="text" pattern="[a,d,s]" placeholder="Allowed only specific Character" size="40" name="text">
+                    <button>Register</button>
+                </form>
+            </fieldset>
+        </div>
+    </body>
+</html>

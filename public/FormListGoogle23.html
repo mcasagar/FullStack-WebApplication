@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Google</title>
+        <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+        <style>
+            input{
+                border: none;
+            }
+            #search{
+                border: 1px solid;
+                padding: 5px;
+                width: 450px;
+            }
+        </style>
+    </head>
+    <body>
+        <div align="center">
+            <h2>Google</h2>
+            <div id="search">
+                <input type="text" size="40" list="topics">
+                <span class="bi bi-search"></span>
+            </div>
+            <datalist id="topics">
+                <option>HTML Tutorial</option>
+                <option>JavaScript Tutorial</option>
+                <option>CSS Example</option>
+                <option>JavaScript Examples</option>
+                <option>CSS Project</option>
+                <option>HTML Example</option>
+                <option>HTML Projects</option>
+            </datalist>
+            <p>
+                <button>Google Search</button>
+            </p>
+        </div>
+    </body>
+</html>
