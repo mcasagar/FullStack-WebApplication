@@ -1,0 +1,17 @@
+{
+  "name": "fullstack-webapplication",
+  "version": "1.0.0",
+  "description": "All FullStack-WebApplication Class Practicals",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Sagar Bhoi",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "bootstrap-icons": "^1.7.1",
+    "jquery": "^3.6.0"
+  }
+}
