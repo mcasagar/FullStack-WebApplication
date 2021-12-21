@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bootstrap | Nav</title>
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+        <style>
+         
+        </style>
+    </head>
+    <body class="container-fluid">
+        <h2>Product Info</h2>
+        <ul class="nav nav-tabs">
+            <li class="nav-item"><button data-bs-toggle="tab"  data-bs-target="#basic" class="nav-link">Basic Details</button></li>
+            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#preview" >Preview</a></li>
+            <li class="nav-item"><button data-bs-toggle="tab" data-bs-target="#description" class="nav-link">Description</button></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane show fade active" id="basic">
+                <h2>Basic Details</h2>
+                <dl>
+                    <dt>Name</dt>
+                    <dd>BoAt Neckband</dd>
+                    <dt>Price</dt>
+                    <dd>5600.65</dd>
+                </dl>
+            </div>
+            <div class="tab-pane fade" id="preview">
+                <h2>Preview</h2>
+                <img src="../public/assets/neckband.jpg" width="200" height="200">
+            </div>
+            <div class="tab-pane fade" id="description">
+                <h2>Description</h2>
+                <p>something about neckband</p>
+            </div>
+        </div>
+        <script src="../node_modules/jquery/dist/jquery.js"></script>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bootstrap pagination</title>
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+    </head>
+    <body class="container-fluid">
+        <h2>Product Details</h2>
+        <ul class="nav nav-tabs active">
+            <li class="list-item"><a href="#" class="nav-link">Basic Details</a></li>
+            <li class="list-item"><a href="#" class="nav-link">Preview</a></li>
+            <li class="list-item"><a href="#" class="nav-link">Description</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane active" id="basic">
+                <h2>Basic Details</h2>
+                <dl>
+                    <dt>Name</dt>
+                    <dd>boAt Neckband</dd>
+                    <dt>Price</dt>
+                    <dd>5443</dd>
+                </dl>
+            </div>
+            <div class="tab-pane" id="preview">
+                <h2>Preview</h2>
+                <img src="../public/assets/neckband.jpg" alt="" width="200" height="200">
+            </div>
+        </div>
+        <div class="tab-pane" id="dsescription">
+            <h2>Description</h2>
+            <p>Somthing about neckband</p>
+        </div>
+        <script src="../node_modules/jquery/dist/jquery.js"></script>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    </body>
+</html>

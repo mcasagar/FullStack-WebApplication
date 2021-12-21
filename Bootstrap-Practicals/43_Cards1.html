@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bootstrap Cards</title>
+        <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+        <style>
+            .card{
+                width: 300px;
+            }
+        </style>
+    </head>
+    <body class="container-fluid">
+        <h2>Todays Deals</h2>
+        <div class="d-flex flex-wrap">
+            <div class="card m-2 ">
+                <div class="card-header">
+                    <h2 class="card-title">boAt Neck Band</h2>
+                    <p class="card-subtitle">50% off</p>
+                </div>
+                <div class="card-body">
+                    <img src="../public/assets/neckband.jpg" class="w-100">
+                    <p class="card-text">&#8377; 1999/-</p>
+                </div>
+                <div class="card-footer">
+                     <button class="btn btn-danger w-100">
+                        <span class="bi bi-cart4"> Add to cart</span>
+                     </button>
+                </div>
+            </div>
+
+            <div class="card m-2">
+                <div class="card-header">
+                    <h2 class="card-title">Laptop</h2>
+                    <p class="card-subtitle">20% off</p>
+                </div>
+                <div class="card-body">
+                    <img src="../public/assets/laptop.jpg" class="w-100">
+                    <p class="card-text">&#8377; 42999/-</p>
+                </div>
+                <div class="card-footer">
+                     <button class="btn btn-danger w-100">
+                        <span class="bi bi-cart4"> Add to cart</span>
+                     </button>
+                </div>
+            </div>
+        </div>
+
+        <script src="../node_modules/jquery/dist/jquery.js"></script>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    </body>
+
+</html>

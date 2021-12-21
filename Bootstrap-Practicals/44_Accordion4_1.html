@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Card</title>
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+        <style>
+         
+        </style>
+    </head>
+    <body class="container-fluid">
+        <h2>Accordion</h2>
+        <div class="accordion" id="topics">
+            <div class="accordion-item">
+               <div class="accordion-header">
+                  <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#css">
+                    <h3>CSS Tutorial</h3>
+                  </button>
+               </div>
+               <div id="css" class="accordion-body accordion-collapse collapse show" data-bs-parent="#topics">
+                  <p>Something about CSS..Your use of this software is subject to the terms and conditions of the license agreement by which you acquired this software.  If you are a volume license customer, use of this software is subject to your volume license agreement.  You may not use this software if you have not validly acquired a license for the software from Microsoft or its licensed distributors.
+                </p>
+               </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button class="btn btn-success w-100" data-bs-toggle="collapse" data-bs-target="#html">
+                        <h3>HTML Tutorial</h3>
+                    </button>
+                 </div>
+                 <div class="accordion-body accordion-collapse collapse" id="html"  data-bs-parent="#topics" >
+                    <p>Something about HTML Your use of this software is subject to the terms and conditions of the license agreement by which you acquired this software.  If you are a volume license customer, use of this software is subject to your volume license agreement.  You may not use this software if you have not validly acquired a license for the software from Microsoft or its licensed distributors.
+                    </p>
+                 </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                   <button class="btn btn-primary w-100" data-bs-toggle="collapse" data-bs-target="#js">
+                    <h3>JavaScript Tutorial</h3>
+                   </button>
+                 </div>
+                 <div class="accordion-body accordion-collapse collapse" id="js"  data-bs-parent="#topics"  >
+                    <p>Something about JS Your use of this software is subject to the terms and conditions of the license agreement by which you acquired this software.  If you are a volume license customer, use of this software is subject to your volume license agreement.  You may not use this software if you have not validly acquired a license for the software from Microsoft or its licensed distributors.
+                    </p>
+                 </div>
+            </div>
+        </div>
+        <script src="../node_modules/jquery/dist/jquery.js"></script>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    </body>
+</html>
