@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Keyframes</title>
+        <style>
+            @keyframes slideIn
+            {
+                from{
+                    margin-left: 100%;
+                    transform: rotate(0deg);
+                    
+                } 
+                50%{
+                    width: 250px;
+                    height: 250px;
+                } 
+                to{
+                    margin-left: 0%;
+                    transform: rotate(360deg);
+                }
+            }
+            img {
+                animation-name: slideIn;
+                animation-duration: 4s;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="../assets/shirt.jpg" width="100" height="100" alt="">
+    </body>
+</html>

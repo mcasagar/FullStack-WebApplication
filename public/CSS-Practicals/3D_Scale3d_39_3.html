@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>2D Effects</title>
+        <style>
+            .container{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 400px;
+                
+            }
+            img{
+                width: 100px;
+                height: 100px;
+                transition: 2s;
+                box-shadow: 2px 2px 3px gray;
+                border: 1px dotted yellow;
+            }
+            img:hover{
+                transform: scale3d(2,2,3);
+                transition: 1s;
+            }
+            .back{
+                background-image: url("../assets/shirt.jpg");
+                background-size: 300px 300px;
+                opacity: 0.6;
+                border:2px solid black;
+                width: 300px;
+                height: 300px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="back">
+                <img src="../assets/shirt.jpg" alt="">
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Text Effects</title>
+        <style>
+            .container{
+                display: flex;
+                
+            }
+            .text-vertical-rl{
+                border: 2px solid red;
+                height: 400px;
+                width: 400px;
+                writing-mode: vertical-rl;
+                padding-right: 10px;
+            }
+
+            .text-vertical-lr{
+                border: 2px solid red;
+                height: 400px;
+                width: 400px;
+                writing-mode: vertical-lr;
+                margin-left: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="text-vertical-rl">
+                <h2>Writing-mode:vertical-rl</h2>
+            </div>
+
+            <div class="text-vertical-lr">
+                <h2>Writing-mode:vertical-lr</h2>
+            </div>
+
+        </div>
+    </body>
+</html>

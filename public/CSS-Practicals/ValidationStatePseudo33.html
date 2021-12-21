@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Element Validation State Pseudo Classes</title> 
+        <style>
+            input:focus{
+                border: 2px solid red;
+            }
+            #UserName:required{
+                border: 2px solid red;
+                box-shadow: 2px 2px 3px red;
+            }
+            #UserName:required+span{
+                display: block;
+                color: red;
+            }
+            #UserName:valid{
+                border: 2px solid green;
+                box-shadow: 2px 2px 3px green;
+            }
+            #UserName:valid+span{
+                display: none;
+            }
+        </style>
+    </head>
+    <h1>Dynamic Element Validation State Pseudo Classes</h1>
+
+    <h2>Register User</h2>
+    <dl>
+        <dt>User Name</dt>
+        <dd>
+            <input type="text" id="UserName" required>
+            <span>Name Required</span>
+        </dd>
+       
+    </dl>
+
+</html>

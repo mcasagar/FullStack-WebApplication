@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Valid and Invalid</title>
+        <style>
+            #Mobile:invalid{
+                border: 2px solid red;
+                box-shadow: 3px 3px 4px red;
+            }
+            #Mobile:valid{
+                border: 2px solid green;
+                box-shadow: 3px 3px 4px green;
+            }
+            #Mobile:invalid+span{
+                color: red;
+                display: block;
+            }
+            #Mobile:valid+span{
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Valid and Invalid</h3>
+        <dl>
+            <dt>Mobile NO :-</dt>
+            <dd>
+                <input type="text" id="Mobile" pattern="\+91\d{10}">
+                <span>Invalid Mobile Number</span>
+            </dd>
+        </dl>
+    </body>
+</html>

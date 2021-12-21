@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Condition and Description</title>
+        <style>
+            p[class="effects"]{
+                color: red;
+            }
+            p[class^="start"]{
+                color: blue;
+            }
+            p[class$="End"]{
+                color: green;
+            }
+            p[class*="star"]{
+                background-color: lightcyan;
+            }
+            p[class~="effects"]{
+                color: chocolate;
+            }
+
+        
+        </style>
+    </head>
+    <body>
+        <p class="effects">normal</p>
+        <p class="startWith">Start With</p>
+        <p class="withEnd">With End</p>
+        <p class="para effects">apply where the space</p>
+        <p class="para-effects">Para-5</p>
+        <p class="starStart">* apply wherever its come</p>
+        <p class="endstar">* apply wherever its come</p>
+        <p class="beforstarafter">* apply wherever its come</p>
+        <p>Para-6</p>
+    </body>
+</html>

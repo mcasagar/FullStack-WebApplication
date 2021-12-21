@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS 3D transform</title>
+        <style>
+            .container{
+                width: 300px;
+                height: 300px;
+                border: 5px solid darkcyan;
+                background-image: url("../assets/speaker.jpg");
+                background-size: 300px 300px;
+                background-repeat: no-repeat;
+                margin:20px;
+            }
+            img{
+                width:300px;
+                height:300px;
+                border: 1px dotted darkcyan;
+                opacity: 0.8;
+
+            }
+            .transform-effect{
+                transform: rotate3d(0, 0, 0, 0deg);
+                transition: 2s;
+            }
+            .transform-effect:hover{
+                transform: rotate3d(2,1,1,180deg);
+                transition: 2s;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <img src="../assets/speaker.jpg" class="transform-effect">
+        </div>
+    </body>
+</html>

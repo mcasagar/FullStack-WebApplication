@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Element State Pseudo Classes</title>
+        <style>
+            #UserName:read-only{
+                background-color: rgba(0,0,0,0.1);
+            }
+            button:enabled{
+                background-color: green;
+                color: white;
+                cursor: grab;
+            }
+            button:disabled{
+                background-color: red;
+                color: white;
+                cursor: not-allowed;
+            }
+            #terms+span{
+                color: red;
+            }
+            #terms:checked+span{
+                color: green;
+            }
+
+            #usingFocus+span{
+                display: none;
+
+            }
+            #usingFocus:focus+span{
+                display: inline;
+            }
+            #usingFocus:focus{
+                border: 2px double red;
+                box-shadow: 2px 2px 3px red;
+            }
+        </style>
+    </head>
+    <h1>Dynamic Element State Pseudo Classes</h1>
+
+    <br><br><br>
+
+    <h2>Register User</h2>
+    <dl>
+        <dt>User Name</dt>
+        <dd><input type="text" id="UserName" value="Sagar" readonly></dd>
+    </dl>
+    <button>Register</button>
+
+    <br><br><br>
+
+    <fieldset>
+        <legend>Terms and Conditions</legend>
+        <h4>Terms of Service</h4>
+        <input type="checkbox" id="terms"><span> I Accept</span>
+    </fieldset>
+
+    <br><br><br>
+    
+    <fieldset>
+        <legend>Terms and Conditions</legend>
+        <h4>Terms of Service</h4>
+        <input type="text" id="usingFocus" placeholder="Name in Block Letters">
+        <span> Name in Block Letters Only</span>
+    </fieldset>
+</html>

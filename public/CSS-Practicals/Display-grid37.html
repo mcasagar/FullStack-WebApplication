@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Display : grid (responsive)</title>
+        <style>
+            section{
+                
+                height: 400px;
+            }
+            header, footer{
+                background-color: tomato;
+                color: white;
+                text-align: center;
+                padding: 10px;
+            }
+            .container{
+                display: grid;
+                grid-template-columns: 3fr 6fr 3fr;
+            }
+            header{
+                grid-row: 1;
+                grid-column: 1/4;
+            }
+            footer{
+                grid-row: 3;
+                grid-column: 1/4;
+            }
+            section{
+                grid-row: 2;
+                grid-column: 1/4;
+                display: grid;
+                grid-template-columns: 3fr 6fr 3fr;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Amazong Shopping</h1>
+            </header>
+            <section>
+                <nav>
+                    <ul>
+                        <li>Electronics</li>
+                        <li>Footwear</li>
+                        <li>Fashion</li>
+                    </ul>
+                </nav>
+                <main>
+                    <h3>Shop | Online</h3>
+                    <p>Special Offerce on Electronics</p>
+                </main>
+                <aside>
+                    50% OFF
+                </aside>
+            </section>
+            <footer>&copy; 2021 copyright - 2021</footer>
+        </div>
+    </body>
+</html>

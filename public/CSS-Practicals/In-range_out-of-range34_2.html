@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>In-range, Out-of-range</title>
+        <style>
+            #Age:in-range{
+                border: 3px solid green;
+                box-shadow: 3px 3px 4px green;
+            }
+            #Age:out-of-range{
+                border: 2px solid red;
+                box-shadow: 3px 3px 4px red;
+            }
+            #Age:in-range+span{
+                display: none;
+            }
+            #Age:out-of-range+span{
+                display: block;
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <dl>
+            <dt>Age</dt>
+            <dd>
+                <input type="number" min="18" max="60" id="Age" value="18">
+                <span>Age 18 to 60 Only</span>
+            </dd>
+
+        </dl>
+    </body>
+</html>
